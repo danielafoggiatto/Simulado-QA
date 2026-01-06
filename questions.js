@@ -1257,7 +1257,7 @@ const interviewQuestions = {
         {
             question: "Fale sobre sua experiência profissional em QA.",
             tip: "Use a estrutura: contexto → responsabilidades → conquistas → aprendizados",
-            modelAnswer: "Trabalho com QA há X anos, começando como [cargo inicial]. Atualmente sou [cargo atual] na [empresa], onde sou responsável por [principais responsabilidades]. Ao longo da minha carreira, participei de projetos como [exemplos], onde implementei [melhorias/processos]. Minhas principais conquistas incluem [resultados mensuráveis como redução de bugs, melhoria de cobertura, etc.].",
+            modelAnswer: "Atuo com QA desde setembro de 2025 em um produto B2B SaaS de grande porte, com arquitetura modular e regras de negócio complexas. Entrei no projeto em um momento em que não havia estrutura de QA, e desde então sou responsável por definir, implementar e evoluir a estratégia de testes automatizados, atuando como referência de qualidade no time. Trabalho com testes automatizados de frontend, API e testes híbridos, principalmente com Playwright, cobrindo hoje 9 módulos principais do sistema, como Leads, Contratos, Vendas, Engenharia e Financeiro. Minha atuação envolve desde a criação da base de testes até a organização da estrutura, definição de padrões, reutilização de helpers e priorização de cenários críticos. Ao longo desse período, implementei centenas de testes automatizados, aumentando progressivamente a cobertura em módulos essenciais do produto. Alguns módulos já possuem cobertura elevada, enquanto outros estão em constante evolução, refletindo um trabalho contínuo de expansão e maturidade de QA em um sistema vivo e em crescimento. Além da automação, atuo fortemente na validação de regras de negócio, testes de regressão, smoke tests e testes de consistência de dados, especialmente em dashboards, indicadores financeiros, filtros avançados e configurações dinâmicas de tela. Também crio testes específicos para reproduzir bugs reais, garantindo correção definitiva e prevenindo regressões. Essa experiência me proporcionou uma visão sólida de qualidade ponta a ponta em produto SaaS, com foco não apenas na execução de testes, mas no impacto das funcionalidades para o usuário final e para o negócio. Hoje me sinto confortável atuando como QA",
             keyPoints: [
                 "Mencione tempo de experiência e evolução na carreira",
                 "Destaque responsabilidades atuais e anteriores",
@@ -1270,7 +1270,7 @@ const interviewQuestions = {
         {
             question: "Por que você escolheu trabalhar com Quality Assurance?",
             tip: "Seja autêntico e mostre paixão pela área",
-            modelAnswer: "Escolhi QA porque tenho uma atenção natural aos detalhes e paixão por garantir que os usuários tenham a melhor experiência possível. Me motiva saber que meu trabalho previne problemas antes que cheguem aos usuários. Além disso, QA me permite ter uma visão holística do produto, entender tanto o lado técnico quanto o negócio, e contribuir diretamente para a qualidade final do que entregamos.",
+            modelAnswer: "Escolhi trabalhar com Quality Assurance porque iniciei minha trajetória estudando desenvolvimento de software, o que me deu uma base técnica sólida, mas ao longo do tempo percebi que meu perfil se conecta ainda mais com qualidade. Tenho uma atenção natural aos detalhes, senso crítico e gosto de entender o comportamento do sistema como um todo. Em QA, consigo unir minha base em desenvolvimento com análise de negócio, prevenção de falhas e melhoria contínua da experiência do usuário. O que mais me motiva é saber que meu trabalho impacta diretamente a estabilidade, a confiabilidade e a qualidade final do produto, evitando problemas antes que cheguem à produção. QA me permite ter uma visão holística da aplicação e atuar de forma estratégica dentro do time.",
             keyPoints: [
                 "Demonstre paixão genuína pela área",
                 "Mencione características pessoais que combinam com QA",
@@ -1309,7 +1309,7 @@ const interviewQuestions = {
         {
             question: "Descreva uma situação de conflito com um desenvolvedor e como resolveu.",
             tip: "Foque na resolução colaborativa, não em quem estava certo",
-            modelAnswer: "Tive uma situação onde um desenvolvedor discordava que um comportamento era bug, alegando ser 'feature'. Em vez de escalar o conflito, sugeri analisarmos juntos a especificação e o comportamento esperado pelo usuário. Descobrimos que a especificação era ambígua. Envolvemos o PO para esclarecer, e juntos definimos o comportamento correto. Isso melhorou nossa comunicação e criamos o hábito de revisar especificações juntos antes do desenvolvimento.",
+            modelAnswer: "Não tive conflitos diretos com desenvolvedores, pois sempre busquei reportar bugs de forma clara, objetiva e colaborativa. Um exemplo foi quando identifiquei que um preset não estava sendo atualizado corretamente. Relatei o problema com evidências, passos para reprodução e impacto no comportamento esperado. O desenvolvedor analisou, concordou com o cenário e realizou a correção.Durante o processo, mantivemos uma comunicação aberta e alinhada, o que facilitou a resolução rápida do problema. Esse tipo de abordagem ajuda a manter um ambiente saudável e focado na qualidade do produto, não em quem está certo ou errado.",
             keyPoints: [
                 "Mostre maturidade e profissionalismo",
                 "Demonstre busca por solução colaborativa",
@@ -1322,7 +1322,7 @@ const interviewQuestions = {
         {
             question: "Qual foi o maior desafio que você enfrentou em sua carreira de QA?",
             tip: "Escolha um desafio relevante e mostre como superou",
-            modelAnswer: "Meu maior desafio foi implementar automação de testes em uma empresa que nunca tinha tido isso. Enfrentei resistência cultural, falta de infraestrutura e código legado difícil de testar. Comecei pequeno, automatizando os smoke tests mais críticos para mostrar valor rápido. Fiz apresentações mostrando o ROI da automação. Em 6 meses, tínhamos 60% de cobertura automatizada e o time de dev começou a escrever seus próprios testes.",
+            modelAnswer: "Meu maior desafio foi estruturar a automação de testes em um projeto que não possuía um processo de QA definido. Quando entrei, não havia testes automatizados nem uma estratégia clara de qualidade. Comecei entendendo o sistema, priorizando os fluxos mais críticos para o negócio e implementando automações de forma incremental, iniciando pelos testes smoke e pelos principais cenários de API e frontend. Com o tempo, fui expandindo a cobertura, criando padrões, organizando a suíte de testes e integrando a automação ao dia a dia do time. Isso trouxe mais estabilidade para as entregas e ajudou a reduzir falhas recorrentes, além de aumentar a confiança nas novas releases.",
             keyPoints: [
                 "Escolha um desafio significativo e relevante",
                 "Explique os obstáculos específicos",
@@ -1335,7 +1335,7 @@ const interviewQuestions = {
         {
             question: "Conte uma situação em que você identificou uma falha em um teste de software que outros haviam negligenciado. Como você procedeu para detectar essa falha e qual foi o resultado da sua intervenção?",
             tip: "Destaque seu olhar crítico e metodologia de investigação",
-            modelAnswer: "Em um projeto de e-commerce, percebi que os testes de checkout sempre usavam o mesmo usuário e carrinho padrão. Questionei: 'E se o usuário tiver cupom expirado? E se o produto sair de estoque durante o checkout?' Criei cenários com dados variados e descobri um bug crítico: quando um produto saía de estoque durante o pagamento, a transação era cobrada mas o pedido não era criado. O bug existia há meses porque os testes não cobriam esse timing específico. Minha intervenção evitou prejuízos de aproximadamente R$30k em estornos mensais e implementamos um mecanismo de reserva de estoque.",
+            modelAnswer: "Durante testes manuais em uma aplicação web, identifiquei que uma determinada sessão deveria ocultar um card da interface conforme a regra de negócio, mas isso não estava acontecendo. Esse comportamento não havia sido percebido anteriormente porque os cenários cobertos focavam apenas na exibição padrão da tela. A falha foi detectada ao validar diferentes estados da aplicação e combinações de permissões e dados. Após confirmar o problema, documentei o bug com evidências claras, incluindo passos para reprodução e impacto no usuário. Compartilhei a análise com o time de desenvolvimento, que corrigiu o comportamento, inclusive em produção. Em seguida, automatizei o cenário para garantir que a regra fosse validada continuamente e evitar regressões futuras.",
             keyPoints: [
                 "Explicar como percebeu a lacuna nos testes",
                 "Mostrar pensamento crítico e questionador",
@@ -1364,7 +1364,7 @@ const interviewQuestions = {
         {
             question: "Como você decide o que automatizar e o que testar manualmente?",
             tip: "Mencione critérios objetivos de decisão",
-            modelAnswer: "Avalio vários critérios: frequência de execução (testes executados frequentemente são candidatos a automação), estabilidade da funcionalidade (features estáveis são melhores para automatizar), complexidade de setup (cenários com muito setup manual se beneficiam de automação), valor de regressão (funcionalidades críticas precisam de regressão automatizada). Mantenho manual: testes exploratórios, usabilidade, cenários que mudam frequentemente, e casos que precisam de julgamento humano.",
+            modelAnswer: "Eu decido o que automatizar considerando o contexto do produto e dos módulos. Funcionalidades que são executadas com frequência, aparecem em vários módulos ou fazem parte de fluxos críticos de negócio (como Financeiro, Contratos, Vendas e Engenharia) entram como prioridade para automação, principalmente para testes de regressão. Também automatizo cenários estáveis, regras de negócio bem definidas e validações que precisam ser executadas a cada release, garantindo consistência e rapidez na validação. Já testes pontuais, validações rápidas, cenários que não se repetem ou funcionalidades em constante mudança, prefiro manter como testes manuais ou exploratórios, onde o olhar humano agrega mais valor. Dessa forma, uso a automação de forma estratégica, focando em reduzir retrabalho e aumentar a confiabilidade do sistema.",
             keyPoints: [
                 "Automação: testes repetitivos, regressão, smoke tests",
                 "Manual: exploratório, usabilidade, cenários instáveis",
@@ -1376,8 +1376,7 @@ const interviewQuestions = {
         },
         {
             question: "O que você sabe sobre testes de API? Como você testaria uma API REST?",
-            tip: "Mencione ferramentas, tipos de teste e validações específicas",
-            modelAnswer: "Para testar APIs REST, verifico: status codes corretos (200, 201, 400, 401, 404, 500), estrutura do response (schema validation), dados retornados, headers, tempo de resposta, e comportamento com dados inválidos. Uso ferramentas como Postman para testes manuais e exploratórios, e frameworks como RestAssured, Supertest ou requests do Python para automação. Também testo cenários de autenticação, rate limiting, paginação, e validação de contratos.",
+            tip: "Tenho experiência prática com testes de API REST, tanto manuais quanto automatizados. Em uma API REST, valido principalmente status codes (200, 201, 400, 401, 403, 404, 500), estrutura e consistência do response, regras de negócio, headers, autenticação e autorização, além de cenários negativos com dados inválidos ou incompletos. No dia a dia, realizo testes de API automatizados com Playwright, validando payloads, contratos e integração entre API e frontend, inclusive em testes híbridos (API + UI) para garantir que os dados exibidos na interface estejam corretos. Também avalio tempo de resposta, paginação, filtros e impacto das chamadas de API nos diferentes módulos do sistema. Para testes manuais e exploratórios, utilizo Postman. Busco sempre garantir que a API esteja estável, previsível e alinhada às regras de negócio, pois ela é a base de um produto SaaS confiável.",
             keyPoints: [
                 "Validações: status codes, response body, headers, schema",
                 "Cenários: happy path, edge cases, erros, autenticação",
@@ -1403,7 +1402,7 @@ const interviewQuestions = {
         {
             question: "Como você garantiria qualidade em um pipeline de CI/CD?",
             tip: "Descreva as etapas e tipos de teste em cada fase",
-            modelAnswer: "Estruturaria em camadas: no commit, rodam testes unitários e linters (feedback em minutos). Em seguida, testes de integração e API (validam contratos entre serviços). Antes do deploy para staging, testes E2E automatizados dos fluxos críticos. Em staging, testes de performance e segurança. Implementaria quality gates: o pipeline falha se cobertura cair, se testes falharem, ou se vulnerabilidades críticas forem detectadas. Também incluiria smoke tests pós-deploy em produção.",
+            modelAnswer: "Para garantir qualidade em um pipeline de CI/CD, trabalho com camadas de testes, priorizando feedback rápido e confiabilidade. No início do pipeline, após commits ou pull requests, executo testes automatizados de API e testes rápidos de frontend, garantindo que regras de negócio e integrações principais não foram quebradas. Em ambientes de validação ou staging, rodam testes de regressão automatizados e E2E, focando nos fluxos críticos dos módulos do sistema. Após o deploy, aplico smoke tests automatizados, validando se a aplicação está funcional e estável. Utilizo GitHub Actions para integração dos testes ao pipeline e acompanho falhas como indicadores de qualidade. A ideia é que o pipeline atue como um quality gate, impedindo que problemas cheguem à produção e aumentando a confiança nas entregas.",
             keyPoints: [
                 "Testes unitários: rápidos, no commit",
                 "Testes de integração: após unitários",
@@ -1415,8 +1414,7 @@ const interviewQuestions = {
         },
         {
             question: "Qual sua experiência com testes de performance? Que métricas você considera importantes?",
-            tip: "Mencione ferramentas, tipos de teste e métricas específicas",
-            modelAnswer: "Tenho experiência com JMeter e k6 para testes de carga. As métricas principais que monitoro são: tempo de resposta (p50, p90, p99 - não apenas média), throughput (requisições por segundo), taxa de erro sob carga, e uso de recursos (CPU, memória). Tipos de teste: load test (carga esperada), stress test (além do limite), spike test (picos repentinos), soak test (carga prolongada). Sempre defino baselines e SLOs antes de testar para ter critérios objetivos de sucesso.",
+            tip: "Hoje não atuo com testes de carga ou stress. No meu dia a dia, utilizo o Playwright para validar performance funcional, como tempo de resposta de APIs e carregamento de páginas, garantindo que fluxos críticos respondam dentro de limites aceitáveis. Para testes de performance em larga escala, reconheço que ferramentas específicas como JMeter ou k6 são mais adequadas.",
             keyPoints: [
                 "Ferramentas: JMeter, k6, Gatling, Locust",
                 "Métricas: latência (percentis), throughput, error rate",
@@ -1429,7 +1427,7 @@ const interviewQuestions = {
         {
             question: "Como você aplicaria uma abordagem baseada em testes automatizados para melhorar a eficiência do processo de QA em um projeto que utiliza testes de regressão frequentes?",
             tip: "Foque em estratégia, priorização e ROI da automação",
-            modelAnswer: "Começaria mapeando os testes de regressão atuais e priorizando automação por: frequência de execução, criticidade do fluxo, tempo gasto manualmente, e estabilidade da funcionalidade. Implementaria a pirâmide de testes: base sólida de testes unitários (rápidos, baratos), camada de integração/API (validam contratos), e topo com E2E apenas para fluxos críticos. Integraria ao CI/CD para execução automática em cada PR. Usaria paralelização para reduzir tempo de execução. Implementaria reports claros com métricas de cobertura e tendências. O resultado esperado: redução de 70% no tempo de regressão, feedback em minutos ao invés de horas, e liberação do time para testes exploratórios de maior valor.",
+            modelAnswer: "Em um projeto com regressões frequentes, começo entendendo quais fluxos realmente impactam o negócio e são executados repetidamente. Priorizo a automação com base em três critérios principais: criticidade do fluxo, frequência de execução e estabilidade da funcionalidade. No meu dia a dia, isso significa automatizar primeiro fluxos transversais e críticos — como autenticação, permissões, filtros globais, regras financeiras e integrações entre módulos — que se repetem em diferentes áreas do sistema e são altamente sensíveis a regressões. Utilizo o Playwright para construir uma suíte de testes automatizados que combina testes de API, testes híbridos (API + UI) e E2E, focando em validar regras de negócio e comportamento do sistema, não apenas a interface. Testes rápidos e pontuais, ou cenários muito voláteis, mantenho como testes manuais. Integro essa suíte ao pipeline de CI/CD, garantindo execução automática em pull requests e antes de novas entregas, com feedback rápido para o time. À medida que a cobertura cresce, reduzo o tempo gasto em regressões manuais e libero espaço para testes exploratórios e validações mais estratégicas. O principal ganho dessa abordagem é previsibilidade, redução de falhas em produção e aumento da confiança nas entregas, especialmente em um sistema grande e modular, onde mudanças em um ponto podem impactar várias áreas.",
             keyPoints: [
                 "Mapear e priorizar o que automatizar primeiro",
                 "Seguir a pirâmide de testes (unitários > integração > E2E)",
@@ -1469,20 +1467,6 @@ const interviewQuestions = {
             category: "technical"
         },
         {
-            question: "Quais são os principais tipos de vulnerabilidades de segurança que você testa? Conhece o OWASP Top 10?",
-            tip: "Mencione vulnerabilidades específicas e como testá-las",
-            modelAnswer: "Sim, o OWASP Top 10 é minha referência principal. As vulnerabilidades que mais testo são: 1) Injection (SQL, NoSQL, LDAP) - testo inserindo payloads maliciosos em campos de entrada como ' OR '1'='1. 2) Broken Authentication - verifico políticas de senha, session management, logout efetivo. 3) XSS (Cross-Site Scripting) - insiro scripts como <script>alert('xss')</script> em campos de texto. 4) IDOR (Insecure Direct Object Reference) - altero IDs em URLs para acessar dados de outros usuários. 5) Security Misconfiguration - verifico headers de segurança, mensagens de erro expostas. Uso ferramentas como OWASP ZAP, Burp Suite para testes automatizados e manuais de segurança.",
-            keyPoints: [
-                "OWASP Top 10 como referência",
-                "SQL Injection: payloads em campos de entrada",
-                "XSS: scripts maliciosos em inputs",
-                "IDOR: manipulação de IDs para acesso indevido",
-                "Ferramentas: OWASP ZAP, Burp Suite",
-                "Verificar headers de segurança e configurações"
-            ],
-            category: "technical"
-        },
-        {
             question: "Quais as principais diferenças entre testar aplicações web e mobile? Quais desafios específicos do mobile?",
             tip: "Aborde aspectos técnicos e de experiência do usuário",
             modelAnswer: "As principais diferenças são: 1) Fragmentação - mobile tem milhares de dispositivos, tamanhos de tela, versões de OS (Android 10-14, iOS 15-17). 2) Conectividade - testar em 3G, 4G, 5G, WiFi, modo offline, transições de rede. 3) Recursos limitados - bateria, memória, CPU afetam performance. 4) Interações específicas - gestos (swipe, pinch, long press), sensores (GPS, câmera, acelerômetro). 5) Distribuição - processo de aprovação nas stores, atualizações não são instantâneas. 6) Instalação - fluxo de install/uninstall, permissões, espaço em disco. Uso emuladores para cobertura ampla e dispositivos reais para validação final. Ferramentas: Appium para automação cross-platform, XCUITest para iOS, Espresso para Android.",
@@ -1513,7 +1497,7 @@ const interviewQuestions = {
         {
             question: "Quais métricas de qualidade você acompanha e reporta? Como usa essas métricas para melhorar o processo?",
             tip: "Mostre métricas relevantes e como elas direcionam decisões",
-            modelAnswer: "Acompanho métricas em diferentes dimensões: 1) Eficácia dos testes - bugs encontrados por fase (quanto mais cedo, melhor), taxa de escape (bugs em produção), cobertura de requisitos. 2) Eficiência - tempo de execução da suíte, taxa de automação, tempo médio para testar uma feature. 3) Qualidade do código de teste - taxa de flakiness, manutenibilidade, tempo de fix de testes quebrados. 4) Processo - lead time de bugs (tempo até correção), densidade de defeitos por módulo, tendência de bugs ao longo do tempo. Uso essas métricas para: identificar áreas problemáticas (módulos com mais bugs), justificar investimento em automação (ROI), melhorar estimativas, e mostrar valor do QA para stakeholders. Apresento dashboards mensais com tendências.",
+            modelAnswer: "Acompanho métricas de qualidade focadas em nossos módulos do sistema SaaS, como financeiro, engenharia e operacional.As principais métricas que monitoro são: Bugs encontrados por módulo e fase de teste, para identificar áreas mais críticas e prevenir problemas em produção. Cobertura de testes, garantindo que funcionalidades essenciais sejam validadas manualmente ou automatizadas. Tempo de execução de testes e taxa de automação, para entender eficiência e priorizar automação onde faz mais diferença. Tendência de defeitos ao longo do tempo, para acompanhar evolução da qualidade e ajustar prioridades. Uso essas métricas para identificar módulos com maior risco, planejar melhorias no processo de testes, e apresentar resultados claros para a equipe e stakeholders, mostrando o impacto do QA na estabilidade do sistema.",
             keyPoints: [
                 "Bugs por fase: quanto mais cedo encontrar, melhor",
                 "Taxa de escape: bugs que chegam em produção",
@@ -1529,7 +1513,7 @@ const interviewQuestions = {
         {
             question: "O time quer lançar uma feature amanhã, mas você encontrou um bug. O que você faz?",
             tip: "Mostre capacidade de avaliar risco e comunicar decisões",
-            modelAnswer: "Primeiro, avalio a severidade e impacto do bug: afeta funcionalidade crítica? Quantos usuários seriam impactados? Existe workaround? Documento o bug com evidências claras e comunico imediatamente ao PO e tech lead com minha análise de risco. Apresento opções: adiar o lançamento, lançar com o bug conhecido (se for baixo impacto) com fix planejado, ou fazer hotfix antes do lançamento se for possível no prazo. A decisão final é do negócio, mas meu papel é garantir que decidam com informação completa.",
+            modelAnswer: "Primeiro, avalio o impacto do bug: ele afeta uma funcionalidade crítica ou a maioria dos usuários? Existe alguma forma de contornar temporariamente? Documento tudo com prints, logs e passos para reproduzir, e comunico rapidamente ao PO e tech lead, explicando os riscos. Aponto opções: adiar o lançamento, seguir com o bug conhecido se for baixo impacto ou tentar um hotfix rápido se for viável. A decisão final é do time de negócio, mas meu papel é garantir que eles tenham informação completa para decidir.",
             keyPoints: [
                 "Avaliar severidade e impacto do bug",
                 "Documentar com evidências claras",
@@ -1542,7 +1526,7 @@ const interviewQuestions = {
         {
             question: "Como você testaria uma funcionalidade sem documentação ou especificação?",
             tip: "Mostre proatividade e técnicas de descoberta",
-            modelAnswer: "Primeiro, busco informações: converso com o PO, dev que implementou, ou stakeholders para entender a intenção. Analiso o código ou PRs se possível. Depois, uso testes exploratórios baseados em heurísticas: o que um usuário esperaria? Quais são os edge cases óbvios? Como sistemas similares funcionam? Documento o que descubro e valido com o time. Enquanto testo, crio a documentação que faltava - transformando o teste em especificação. Também reporto a falta de documentação como risco de processo.",
+            modelAnswer: "Quando encontro uma funcionalidade sem documentação ou especificação, primeiro busco entender o contexto: converso com o PO, desenvolvedor que implementou ou outros stakeholders para compreender o objetivo e a intenção do recurso. Em seguida, realizo testes exploratórios, pensando em como o usuário final interagiria, quais são os casos de borda mais prováveis e como funcionalidades semelhantes funcionam. Durante o processo, documento tudo que descubro, criando uma base de especificação que o time pode validar, e reporto a falta de documentação como um ponto de melhoria do processo. Essa abordagem me permite testar com segurança, descobrir possíveis problemas antes que cheguem a produção e contribuir para que a equipe tenha informações mais claras para decisões futuras.",
             keyPoints: [
                 "Buscar informações com PO, devs, stakeholders",
                 "Usar testes exploratórios e heurísticas",
@@ -1555,7 +1539,7 @@ const interviewQuestions = {
         {
             question: "Você percebe que a cobertura de testes do projeto é muito baixa. Como abordaria isso?",
             tip: "Mostre estratégia gradual e pragmática",
-            modelAnswer: "Não tentaria resolver tudo de uma vez. Primeiro, analisaria onde estão os maiores riscos - funcionalidades críticas sem cobertura. Priorizaria automação das áreas de maior risco e maior frequência de bugs. Implementaria uma política de 'não piorar': todo código novo deve ter testes. Definiria metas incrementais realistas (aumentar 5% por sprint). Mostraria o valor ao time com métricas: bugs encontrados por testes, tempo economizado em regressão. Gradualmente, a cultura de testes melhora.",
+            modelAnswer: "Quando percebi que a cobertura de testes do projeto estava baixa, comecei recomendando aumentar a cobertura em cada módulo, priorizando os mais críticos. Para organizar o trabalho, pedi um tempo dedicado para implementar os testes, e criei um documento com planejamento e prioridades, detalhando quais módulos e funcionalidades testar primeiro. Atualmente, estou executando os testes de forma gradual, validando e automatizando onde faz mais diferença, e acompanhando a evolução da cobertura. Essa abordagem permite melhorar a qualidade do sistema de forma estruturada, sem comprometer o andamento do projeto, e já mostra valor ao time com resultados concretos.",
             keyPoints: [
                 "Analisar e priorizar por risco",
                 "Começar pelas áreas críticas",
@@ -1581,7 +1565,7 @@ const interviewQuestions = {
         {
             question: "Você é o único QA em um time com 5 desenvolvedores. Como gerencia a demanda?",
             tip: "Mostre estratégia de multiplicação e priorização",
-            modelAnswer: "Não tento testar tudo sozinho - isso não escala. Minha estratégia: capacito os devs para escreverem testes e fazerem self-review, defino checklists de qualidade para PRs, implemento automação para regressão (liberando meu tempo), priorizo minha atuação em áreas de maior risco e complexidade, faço testes exploratórios onde agregar mais valor. Também negocio com o time: se entrar muito trabalho, discutimos prioridades ou aceitamos riscos documentados. Meu papel vira mais de 'quality coach' do que 'testador de tudo'.",
+            modelAnswer: "Como única QA do time, organizo minha atuação por prioridade, focando primeiro em funcionalidades críticas, módulos mais usados e áreas com histórico de bugs. Planejo meu tempo entre testes exploratórios, automação de regressão e validação de novas funcionalidades. Sempre comunico ao time e ao PO sobre limites de demanda, discutindo riscos e priorizando o que precisa ser testado para garantir qualidade sem atrasar entregas.",
             keyPoints: [
                 "Capacitar devs para qualidade (shift left)",
                 "Automação para liberar tempo de regressão",
@@ -1594,7 +1578,7 @@ const interviewQuestions = {
         {
             question: "O cliente reportou um bug em produção que passou pelos seus testes. Como reage?",
             tip: "Mostre responsabilidade e foco em melhoria",
-            modelAnswer: "Primeiro, assumo responsabilidade sem ficar na defensiva - bugs escapam, faz parte. Priorizo ajudar a resolver: reproduzo o bug, documento, e apoio o fix. Depois, faço análise de causa raiz: por que não pegamos? Faltou cenário no teste? Dados diferentes? Condição de ambiente? Com base nisso, melhoro: adiciono o cenário que faltou à suíte de testes, atualizo a estratégia se necessário. Compartilho o aprendizado com o time como retrospectiva, não como culpa. Todo bug escapado é oportunidade de melhorar o processo.",
+            modelAnswer: "Quando um bug escapa para produção, assumo responsabilidade sem me colocar na defensiva, entendendo que isso acontece. Primeiro, reproduzo, documento e apoio a correção rapidamente. Depois, faço uma análise de causa raiz: faltou cenário no teste, dados diferentes ou condição de ambiente específica? Com base nisso, atualizo os testes e a estratégia para prevenir que aconteça novamente, e compartilho o aprendizado com o time de forma construtiva, transformando o erro em melhoria do processo.",
             keyPoints: [
                 "Assumir responsabilidade, não ser defensivo",
                 "Priorizar resolução do problema",
@@ -1620,7 +1604,7 @@ const interviewQuestions = {
         {
             question: "Imagine que uma versão do software apresenta um bug intermitente que ocorre apenas em condições específicas. Como você estruturaria um plano de testes para identificar e reproduzir esse bug?",
             tip: "Mostre metodologia sistemática de investigação",
-            modelAnswer: "Estruturaria uma abordagem sistemática: 1) Coletar dados - reunir todos os reports, logs, horários de ocorrência, ambiente, dados de entrada, padrões de uso. 2) Análise de padrões - buscar correlações (horário, carga, dados específicos, sequência de ações). 3) Hipóteses - listar possíveis causas: race condition, memory leak, cache, dados corrompidos, timeout. 4) Reprodução controlada - criar ambiente isolado e testar cada hipótese sistematicamente. 5) Instrumentação - adicionar logs detalhados, monitoramento de recursos, tracing. 6) Testes de estresse - executar cenários em loop para aumentar probabilidade de reprodução. 7) Documentar tudo - mesmo tentativas que falharam ajudam a entender o problema.",
+            modelAnswer: "Para um bug intermitente, eu estruturaria um plano sistemático de investigação: Coletar dados: reunir reports, logs, ambiente, dados de entrada e sequência de ações em que o bug ocorreu. Analisar padrões: procurar correlações, horários, cargas ou tipos de dados que possam disparar o problema. Gerar hipóteses: possíveis causas como dados corrompidos, timeout, cache ou condições de concorrência. Reprodução controlada: criar cenários isolados e testar cada hipótese de forma organizada. Instrumentação: adicionar logs detalhados e monitoramento para capturar mais informações. Testes repetidos: rodar cenários várias vezes para aumentar a chance de reproduzir o bug. Documentação: registrar todas as tentativas, sucessos ou falhas, para análise do time e aprendizado futuro.",
             keyPoints: [
                 "Coleta sistemática de dados e evidências",
                 "Análise de padrões e correlações",
@@ -1648,7 +1632,7 @@ const interviewQuestions = {
         {
             question: "Como você gerencia ambientes de teste para garantir que sejam confiáveis e representem produção adequadamente?",
             tip: "Aborde configuração, dados, estabilidade e governança",
-            modelAnswer: "Gestão de ambientes é crítica para testes confiáveis. Minha abordagem: 1) Paridade com produção - usar Infrastructure as Code (Terraform, Docker) para garantir configurações idênticas, mesmas versões de serviços e dependências. 2) Dados de teste - estratégia de data masking para dados de produção sanitizados, geradores de massa de dados para cenários específicos, refresh periódico. 3) Isolamento - ambientes dedicados por propósito (dev, QA, staging, performance), evitar interferência entre times. 4) Estabilidade - monitoramento da saúde do ambiente, processo de reset/restore rápido, documentação de dependências externas e mocks quando necessário. 5) Governança - controle de acesso, log de mudanças, ownership claro. Ambientes instáveis geram flakiness e perda de confiança nos testes.",
+            modelAnswer: "Para garantir que os ambientes de teste sejam confiáveis e representem produção, eu foco em alguns pontos práticos: Configuração consistente: procuro que o ambiente seja o mais próximo possível do ambiente de produção em termos de funcionalidades e dados essenciais. Dados de teste: uso dados realistas ou sanitizados para validar cenários, garantindo que os testes reflitam situações reais. Estabilidade e isolamento: evito alterações simultâneas que possam interferir nos testes e documento o estado do ambiente quando necessário. Com isso, consigo realizar testes confiáveis, reproduzindo cenários de produção sem depender de ambientes instáveis.",
             keyPoints: [
                 "Paridade com produção usando IaC (Docker, Terraform)",
                 "Estratégia de dados: masking, geradores, refresh",
@@ -1678,7 +1662,7 @@ const interviewQuestions = {
         {
             question: "Como você se mantém atualizado na área de QA?",
             tip: "Mencione fontes específicas e práticas de aprendizado",
-            modelAnswer: "Sigo várias fontes: blogs como Ministry of Testing, Test Automation University para cursos gratuitos, podcasts como Test Guild. No LinkedIn sigo profissionais como Angie Jones, Alan Richardson. Participo de comunidades locais de QA e meetups. Pratico em projetos pessoais - tenho um repo onde experimento ferramentas novas. Também leio livros clássicos como 'Lessons Learned in Software Testing'. Tento dedicar pelo menos 2 horas por semana para aprendizado estruturado, além de aprender no dia a dia no trabalho.",
+            modelAnswer: "Para me manter atualizada em QA, sigo comunidades e profissionais na área, como blogs, LinkedIn e grupos de QA. Também pratico em projetos pessoais, testando ferramentas novas e técnicas que aprendo. Sempre busco aprender no dia a dia no trabalho, observando como melhorar testes e processos, e tento dedicar algum tempo semanal para estudo estruturado, cursos ou leituras..",
             keyPoints: [
                 "Fontes específicas: blogs, cursos, podcasts",
                 "Comunidades e networking",
@@ -1717,7 +1701,7 @@ const interviewQuestions = {
         {
             question: "Onde você se vê em 5 anos na área de QA?",
             tip: "Mostre ambição realista e interesse em crescimento",
-            modelAnswer: "Nos próximos 5 anos, quero me aprofundar em [automação/performance/liderança - escolha seu foco]. Gostaria de liderar iniciativas de qualidade, talvez como QA Lead ou Quality Engineer Senior. Também me interesso por compartilhar conhecimento - seja mentorando pessoas mais juniores ou palestrando em eventos da área. Quero estar em uma posição onde influencio a cultura de qualidade da organização, não apenas executo testes. Continuo aberto a onde o caminho me levar, mas sempre focado em qualidade de software.",
+            modelAnswer: "Nos próximos 5 anos, me vejo continuando a me especializar em automação de testes, aprimorando minhas habilidades em ferramentas, frameworks e boas práticas. Também tenho interesse em crescer para posições de liderança, como QA Lead ou Quality Engineer Senior, contribuindo para a cultura de qualidade do time e apoiando colegas mais juniores. Quero estar em uma posição onde posso influenciar decisões de qualidade, ajudando a equipe a entregar software mais confiável e eficiente, sem perder a prática técnica que amo.",
             keyPoints: [
                 "Ter uma direção, mas ser flexível",
                 "Mencionar áreas de aprofundamento técnico",
@@ -1743,7 +1727,7 @@ const interviewQuestions = {
         {
             question: "Por que devemos te contratar?",
             tip: "Seja confiante, específico e conecte com a vaga",
-            modelAnswer: "Vocês deveriam me contratar porque combino experiência técnica sólida com habilidades de comunicação e visão de negócio. Tenho [X anos] de experiência em [áreas relevantes para a vaga], e já [mencione uma conquista relevante]. Além das skills técnicas, trago uma mentalidade de melhoria contínua - não apenas encontro bugs, mas ajudo a preveni-los melhorando processos. Sou colaborativo e me adapto bem a times ágeis. Estou genuinamente interessado nos desafios de [empresa/produto] e acredito que posso agregar valor rapidamente.",
+            modelAnswer: "Vocês deveriam me contratar porque tenho experiência prática com testes em aplicações web B2B SaaS, como dashboards de gestão para construtoras e incorporadoras. Já trabalhei com múltiplos módulos críticos, como financeiro, engenharia, contas a pagar/receber e funil de leads, garantindo que funcionalidades essenciais funcionem corretamente. Além de executar testes manuais e automatizados, contribuo para melhorar processos, aumentar cobertura e documentar cenários complexos, ajudando o time a entregar software mais confiável. Sou proativa, colaborativa e me adapto bem a times ágeis, e estou motivada para enfrentar desafios do produto, agregando valor desde o início.",
             keyPoints: [
                 "Seja específico sobre suas qualificações",
                 "Mencione conquistas relevantes",
@@ -1756,7 +1740,7 @@ const interviewQuestions = {
         {
             question: "Qual é o papel do QA em um time ágil (Scrum/Kanban)? Como você participa das cerimônias?",
             tip: "Mostre conhecimento de ágil e como QA agrega valor em cada momento",
-            modelAnswer: "Em times ágeis, QA é parte integral do time, não uma fase separada. Minha participação: 1) Planning - ajudo a estimar considerando esforço de teste, identifico riscos, questiono critérios de aceite incompletos. 2) Refinement - valido se histórias são testáveis, sugiro cenários de teste, ajudo a quebrar histórias grandes. 3) Daily - comunico status dos testes, bloqueios, e coordeno com devs. 4) Durante a sprint - testo features assim que ficam prontas (não espero o final), automatizo em paralelo, faço pair testing com devs. 5) Review - demonstro funcionalidades testadas, mostro edge cases cobertos. 6) Retrospectiva - trago métricas de qualidade, sugiro melhorias de processo. Em Kanban, foco em limitar WIP e manter fluxo contínuo de validação.",
+            modelAnswer: "No meu time ágil, meu papel como QA é garantir que os módulos existentes funcionem corretamente, testando funcionalidades que já estão em produção ou que estão sendo adaptadas. Meu foco é validar os fluxos críticos, encontrar bugs e documentar os cenários de teste, ajudando o time a manter a qualidade do software. Embora ainda não participe de estimativas ou planejamento de histórias, me comunico com desenvolvedores sobre problemas encontrados e priorizo testes em áreas críticas, contribuindo para entregas mais confiáveis.",
             keyPoints: [
                 "QA integrado ao time, não fase separada",
                 "Participação ativa em todas as cerimônias",
