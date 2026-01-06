@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulado QA - Teste seus conhecimentos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Tela Inicial -->
+        <section id="home-screen" class="screen active">
+            <div class="logo">
+                <span class="logo-icon">🧪</span>
+                <h1>Simulado QA</h1>
+            </div>
+            <p class="subtitle">Teste seus conhecimentos em Quality Assurance</p>
+
+            <div class="mode-selection">
+                <h2>Escolha o modo:</h2>
+                <div class="mode-options mode-options-3">
+                    <label class="mode-card">
+                        <input type="radio" name="quiz-mode" value="quiz" checked>
+                        <div class="mode-content">
+                            <span class="mode-icon">📝</span>
+                            <span class="mode-title">Quiz</span>
+                            <span class="mode-desc">Múltipla escolha com correção automática</span>
+                        </div>
+                    </label>
+                    <label class="mode-card">
+                        <input type="radio" name="quiz-mode" value="flashcard">
+                        <div class="mode-content">
+                            <span class="mode-icon">🧠</span>
+                            <span class="mode-title">Flashcard</span>
+                            <span class="mode-desc">Pense na resposta e confira depois</span>
+                        </div>
+                    </label>
+                    <label class="mode-card">
+                        <input type="radio" name="quiz-mode" value="interview">
+                        <div class="mode-content">
+                            <span class="mode-icon">💼</span>
+                            <span class="mode-title">Entrevista</span>
+                            <span class="mode-desc">Simule perguntas de entrevistas reais</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div id="category-section" class="category-selection">
+                <h2>Escolha as categorias:</h2>
+
+                <div class="categories-grid">
+                    <label class="category-card">
+                        <input type="checkbox" value="fundamentos" checked>
+                        <div class="card-content">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-title">Fundamentos QA</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="frontend">
+                        <div class="card-content">
+                            <span class="card-icon">🌐</span>
+                            <span class="card-title">Frontend Testing</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="backend">
+                        <div class="card-content">
+                            <span class="card-icon">⚙️</span>
+                            <span class="card-title">Backend Testing</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="api">
+                        <div class="card-content">
+                            <span class="card-icon">🔌</span>
+                            <span class="card-title">API Testing</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="playwright">
+                        <div class="card-content">
+                            <span class="card-icon">🎭</span>
+                            <span class="card-title">Playwright</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="selenium">
+                        <div class="card-content">
+                            <span class="card-icon">🤖</span>
+                            <span class="card-title">Selenium</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="cypress">
+                        <div class="card-content">
+                            <span class="card-icon">🌲</span>
+                            <span class="card-title">Cypress</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" value="hibrido">
+                        <div class="card-content">
+                            <span class="card-icon">🔄</span>
+                            <span class="card-title">Testes Híbridos</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="options">
+                    <label class="option-toggle">
+                        <input type="checkbox" id="shuffle-questions" checked>
+                        <span class="toggle-slider"></span>
+                        <span class="option-label">🔀 Embaralhar questões</span>
+                    </label>
+
+                    <label class="option-toggle" id="shuffle-answers-option">
+                        <input type="checkbox" id="shuffle-answers">
+                        <span class="toggle-slider"></span>
+                        <span class="option-label">🎲 Embaralhar alternativas</span>
+                    </label>
+                </div>
+
+                <button id="start-btn" class="btn-primary">
+                    <span id="start-btn-text">Iniciar Quiz</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+                <p id="question-count" class="question-count"></p>
+            </div>
+
+            <!-- Seção de categorias de entrevista -->
+            <div id="interview-category-section" class="category-selection hidden">
+                <!-- Seletor de Idioma -->
+                <div class="language-selector">
+                    <span class="language-label">🌐 Idioma:</span>
+                    <div class="language-options">
+                        <label class="language-option">
+                            <input type="radio" name="interview-language" value="pt" checked>
+                            <span class="language-btn">🇧🇷 Português</span>
+                        </label>
+                        <label class="language-option">
+                            <input type="radio" name="interview-language" value="en">
+                            <span class="language-btn">🇺🇸 English</span>
+                        </label>
+                    </div>
+                </div>
+
+                <h2 id="interview-section-title">Escolha os temas da entrevista:</h2>
+
+                <div class="categories-grid">
+                    <label class="category-card">
+                        <input type="checkbox" class="interview-category" value="behavioral" checked>
+                        <div class="card-content">
+                            <span class="card-icon">🎭</span>
+                            <span class="card-title">Comportamental</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" class="interview-category" value="technical">
+                        <div class="card-content">
+                            <span class="card-icon">💻</span>
+                            <span class="card-title">Técnico</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" class="interview-category" value="situational">
+                        <div class="card-content">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-title">Situacional</span>
+                        </div>
+                    </label>
+
+                    <label class="category-card">
+                        <input type="checkbox" class="interview-category" value="culture">
+                        <div class="card-content">
+                            <span class="card-icon">🤝</span>
+                            <span class="card-title">Cultura & Soft Skills</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="options">
+                    <label class="option-toggle">
+                        <input type="checkbox" id="shuffle-interview" checked>
+                        <span class="toggle-slider"></span>
+                        <span class="option-label">🔀 Embaralhar perguntas</span>
+                    </label>
+                </div>
+
+                <button id="start-interview-btn" class="btn-primary">
+                    <span>Iniciar Entrevista</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+                <p id="interview-count" class="question-count"></p>
+            </div>
+        </section>
+
+        <!-- Tela do Quiz -->
+        <section id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="current-question">1</span>
+                    <span class="separator">/</span>
+                    <span id="total-questions">10</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="score-info">
+                    <span class="score-icon">✓</span>
+                    <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <span id="question-category" class="question-category">Fundamentos</span>
+                <h2 id="question-text" class="question-text"></h2>
+
+                <div id="answers-container" class="answers-container"></div>
+
+                <div id="feedback" class="feedback hidden">
+                    <div class="feedback-header">
+                        <span id="feedback-icon"></span>
+                        <span id="feedback-text"></span>
+                    </div>
+                    <p id="feedback-explanation" class="feedback-explanation"></p>
+                </div>
+            </div>
+
+            <div class="quiz-footer">
+                <button id="next-btn" class="btn-primary hidden">
+                    <span>Próxima</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Tela de Resultado -->
+        <section id="result-screen" class="screen">
+            <div class="result-container">
+                <div id="result-icon" class="result-icon">🏆</div>
+                <h2>Simulado Concluído!</h2>
+
+                <div class="result-score">
+                    <span id="final-score" class="score-value">0</span>
+                    <span class="score-separator">/</span>
+                    <span id="final-total" class="score-total">10</span>
+                </div>
+
+                <div id="result-percentage" class="result-percentage">0%</div>
+                <p id="result-message" class="result-message"></p>
+
+                <div class="result-stats">
+                    <div class="stat">
+                        <span class="stat-icon correct">✓</span>
+                        <span id="correct-count" class="stat-value">0</span>
+                        <span class="stat-label">Corretas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon wrong">✗</span>
+                        <span id="wrong-count" class="stat-value">0</span>
+                        <span class="stat-label">Incorretas</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="review-btn" class="btn-secondary">
+                        <span>📋 Revisar Respostas</span>
+                    </button>
+                    <button id="restart-btn" class="btn-primary">
+                        <span>🔄 Novo Simulado</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de Revisão -->
+        <section id="review-screen" class="screen">
+            <div class="review-header">
+                <h2>📋 Revisão das Respostas</h2>
+                <button id="back-to-result" class="btn-secondary">← Voltar</button>
+            </div>
+
+            <div id="review-container" class="review-container"></div>
+        </section>
+
+        <!-- Tela do Flashcard -->
+        <section id="flashcard-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="fc-current-question">1</span>
+                    <span class="separator">/</span>
+                    <span id="fc-total-questions">10</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="fc-progress-fill" class="progress-fill"></div>
+                </div>
+                <div class="score-info">
+                    <span class="score-icon">✓</span>
+                    <span id="fc-current-score">0</span>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <span id="fc-question-category" class="question-category">Fundamentos</span>
+                <h2 id="fc-question-text" class="question-text"></h2>
+
+                <div id="fc-answer-section" class="fc-answer-section hidden">
+                    <div class="fc-answer-box">
+                        <div class="fc-answer-label">✓ Resposta Correta:</div>
+                        <p id="fc-correct-answer" class="fc-correct-answer"></p>
+                    </div>
+                    <div class="fc-explanation-box">
+                        <div class="fc-explanation-label">💡 Explicação:</div>
+                        <p id="fc-explanation" class="fc-explanation"></p>
+                    </div>
+                </div>
+
+                <button id="fc-reveal-btn" class="btn-reveal">
+                    <span>🔍 Ver Resposta</span>
+                </button>
+
+                <div id="fc-self-eval" class="fc-self-eval hidden">
+                    <p class="fc-eval-question">Como você se saiu?</p>
+                    <div class="fc-eval-buttons">
+                        <button id="fc-knew-btn" class="btn-knew">
+                            <span>✓ Eu sabia</span>
+                        </button>
+                        <button id="fc-didnt-know-btn" class="btn-didnt-know">
+                            <span>✗ Não sabia</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de Resultado do Flashcard -->
+        <section id="flashcard-result-screen" class="screen">
+            <div class="result-container">
+                <div id="fc-result-icon" class="result-icon">🧠</div>
+                <h2>Estudo Concluído!</h2>
+
+                <div class="result-score">
+                    <span id="fc-final-score" class="score-value">0</span>
+                    <span class="score-separator">/</span>
+                    <span id="fc-final-total" class="score-total">10</span>
+                </div>
+
+                <div id="fc-result-percentage" class="result-percentage">0%</div>
+                <p id="fc-result-message" class="result-message"></p>
+
+                <div class="result-stats">
+                    <div class="stat">
+                        <span class="stat-icon correct">✓</span>
+                        <span id="fc-knew-count" class="stat-value">0</span>
+                        <span class="stat-label">Sabia</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-icon wrong">✗</span>
+                        <span id="fc-didnt-know-count" class="stat-value">0</span>
+                        <span class="stat-label">Não sabia</span>
+                    </div>
+                </div>
+
+                <div class="result-actions">
+                    <button id="fc-review-btn" class="btn-secondary">
+                        <span>📋 Revisar Cartões</span>
+                    </button>
+                    <button id="fc-restart-btn" class="btn-primary">
+                        <span>🔄 Novo Estudo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de Revisão do Flashcard -->
+        <section id="flashcard-review-screen" class="screen">
+            <div class="review-header">
+                <h2>📋 Revisão dos Cartões</h2>
+                <button id="fc-back-to-result" class="btn-secondary">← Voltar</button>
+            </div>
+
+            <div id="fc-review-container" class="review-container"></div>
+        </section>
+
+        <!-- Tela da Entrevista -->
+        <section id="interview-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span id="iv-current-question">1</span>
+                    <span class="separator">/</span>
+                    <span id="iv-total-questions">10</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="iv-progress-fill" class="progress-fill"></div>
+                </div>
+                <button id="iv-skip-btn" class="btn-skip">Pular →</button>
+            </div>
+
+            <div class="interview-container">
+                <div class="interview-header">
+                    <span id="iv-badge" class="interview-badge">💼 Simulador de Entrevista</span>
+                    <span id="iv-question-category" class="question-category">Comportamental</span>
+                </div>
+
+                <h2 id="iv-question-text" class="question-text interview-question"></h2>
+
+                <div class="interview-tip" id="iv-tip-section">
+                    <span class="tip-icon">💡</span>
+                    <span id="iv-tip-label" class="tip-label">Dica:</span>
+                    <span id="iv-tip-text" class="tip-text"></span>
+                </div>
+
+                <div class="interview-answer-area">
+                    <label id="iv-answer-label" for="iv-user-answer" class="answer-label">Sua resposta (opcional - para praticar digitando):</label>
+                    <textarea id="iv-user-answer" class="interview-textarea" placeholder="Digite sua resposta aqui... Ou apenas pense nela e clique em 'Ver Resposta Modelo'"></textarea>
+                </div>
+
+                <button id="iv-reveal-btn" class="btn-reveal">
+                    <span>📖 Ver Resposta Modelo</span>
+                </button>
+
+                <div id="iv-answer-section" class="iv-answer-section hidden">
+                    <div class="iv-model-answer">
+                        <div class="iv-answer-header">
+                            <span class="iv-answer-icon">✨</span>
+                            <span id="iv-answer-title" class="iv-answer-title">Resposta Modelo</span>
+                        </div>
+                        <div id="iv-model-answer-text" class="iv-answer-text"></div>
+                    </div>
+
+                    <div class="iv-key-points">
+                        <div class="iv-points-header">
+                            <span class="iv-points-icon">🎯</span>
+                            <span id="iv-points-title" class="iv-points-title">Pontos-chave para incluir:</span>
+                        </div>
+                        <ul id="iv-key-points-list" class="iv-points-list"></ul>
+                    </div>
+
+                    <div class="iv-self-eval">
+                        <p id="iv-eval-question" class="iv-eval-question">Como você avalia sua resposta?</p>
+                        <div class="iv-eval-buttons">
+                            <button class="iv-eval-btn iv-eval-great" data-rating="great">
+                                <span>😄</span>
+                                <span id="iv-eval-great-label">Ótima</span>
+                            </button>
+                            <button class="iv-eval-btn iv-eval-good" data-rating="good">
+                                <span>🙂</span>
+                                <span id="iv-eval-good-label">Boa</span>
+                            </button>
+                            <button class="iv-eval-btn iv-eval-ok" data-rating="ok">
+                                <span>😐</span>
+                                <span id="iv-eval-ok-label">Regular</span>
+                            </button>
+                            <button class="iv-eval-btn iv-eval-bad" data-rating="bad">
+                                <span>😟</span>
+                                <span id="iv-eval-bad-label">Preciso melhorar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de Resultado da Entrevista -->
+        <section id="interview-result-screen" class="screen">
+            <div class="result-container">
+                <div id="iv-result-icon" class="result-icon">💼</div>
+                <h2 id="iv-result-title">Entrevista Concluída!</h2>
+
+                <p id="iv-result-subtitle" class="iv-result-subtitle">Você praticou <span id="iv-total-practiced">0</span> perguntas</p>
+
+                <div class="iv-result-ratings">
+                    <div class="iv-rating-item">
+                        <span class="iv-rating-emoji">😄</span>
+                        <span id="iv-great-count" class="iv-rating-count">0</span>
+                        <span id="iv-great-label" class="iv-rating-label">Ótimas</span>
+                    </div>
+                    <div class="iv-rating-item">
+                        <span class="iv-rating-emoji">🙂</span>
+                        <span id="iv-good-count" class="iv-rating-count">0</span>
+                        <span id="iv-good-label" class="iv-rating-label">Boas</span>
+                    </div>
+                    <div class="iv-rating-item">
+                        <span class="iv-rating-emoji">😐</span>
+                        <span id="iv-ok-count" class="iv-rating-count">0</span>
+                        <span id="iv-ok-label" class="iv-rating-label">Regulares</span>
+                    </div>
+                    <div class="iv-rating-item">
+                        <span class="iv-rating-emoji">😟</span>
+                        <span id="iv-bad-count" class="iv-rating-count">0</span>
+                        <span id="iv-bad-label" class="iv-rating-label">A melhorar</span>
+                    </div>
+                </div>
+
+                <p id="iv-result-message" class="result-message"></p>
+
+                <div class="result-actions">
+                    <button id="iv-review-btn" class="btn-secondary">
+                        <span>📋 Revisar Respostas</span>
+                    </button>
+                    <button id="iv-restart-btn" class="btn-primary">
+                        <span>🔄 Nova Entrevista</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela de Revisão da Entrevista -->
+        <section id="interview-review-screen" class="screen">
+            <div class="review-header">
+                <h2>📋 Revisão da Entrevista</h2>
+                <button id="iv-back-to-result" class="btn-secondary">← Voltar</button>
+            </div>
+
+            <div id="iv-review-container" class="review-container"></div>
+        </section>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
