@@ -97,13 +97,3 @@ Contribuições são bem-vindas. Para colaborar:
 3. Faça commits claros e abertos a revisão.
 4. Abra um pull request descrevendo a mudança.
 
-## Licença
-
-Este projeto pode ser distribuído sob a licença MIT — adicione um arquivo `LICENSE` se quiser formalizar.
-
----
-
-Se quiser, posso:
-- Gerar um modelo de `questions.js` com exemplos preparados para testar o app.
-- Adicionar um pequeno script de servidor npm (package.json) para conveniência.
-Diga qual dessas opções prefere e eu adiciono ao repositório.
