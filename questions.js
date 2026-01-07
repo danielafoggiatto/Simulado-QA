@@ -1497,7 +1497,7 @@ const interviewQuestions = {
         {
             question: "Quais métricas de qualidade você acompanha e reporta? Como usa essas métricas para melhorar o processo?",
             tip: "Mostre métricas relevantes e como elas direcionam decisões",
-            modelAnswer: "Acompanho métricas de qualidade focadas em nossos módulos do sistema SaaS, como financeiro, engenharia e operacional.As principais métricas que monitoro são: Bugs encontrados por módulo e fase de teste, para identificar áreas mais críticas e prevenir problemas em produção. Cobertura de testes, garantindo que funcionalidades essenciais sejam validadas manualmente ou automatizadas. Tempo de execução de testes e taxa de automação, para entender eficiência e priorizar automação onde faz mais diferença. Tendência de defeitos ao longo do tempo, para acompanhar evolução da qualidade e ajustar prioridades. Uso essas métricas para identificar módulos com maior risco, planejar melhorias no processo de testes, e apresentar resultados claros para a equipe e stakeholders, mostrando o impacto do QA na estabilidade do sistema.",
+            modelAnswer: "Acompanho métricas de qualidade focadas em nossos 9 módulos do sistema SaaS, como financeiro, engenharia e contratos.As principais métricas que monitoro são: Bugs encontrados por módulo e fase de teste, para identificar áreas mais críticas e prevenir problemas em produção. Cobertura de testes, garantindo que funcionalidades essenciais sejam validadas manualmente ou automatizadas. Tempo de execução de testes e taxa de automação, para entender eficiência e priorizar automação onde faz mais diferença. Tendência de defeitos ao longo do tempo, para acompanhar evolução da qualidade e ajustar prioridades. Uso essas métricas para identificar módulos com maior risco, planejar melhorias no processo de testes, e apresentar resultados claros para a equipe e stakeholders, mostrando o impacto do QA na estabilidade do sistema.",
             keyPoints: [
                 "Bugs por fase: quanto mais cedo encontrar, melhor",
                 "Taxa de escape: bugs que chegam em produção",
@@ -1803,7 +1803,7 @@ const interviewQuestionsEN = {
         {
             question: "Tell me about your professional experience in QA.",
             tip: "Use the structure: context → responsibilities → achievements → learnings",
-            modelAnswer: "I've been working in QA for X years, starting as [initial role]. Currently, I'm a [current role] at [company], where I'm responsible for [main responsibilities]. Throughout my career, I've participated in projects like [examples], where I implemented [improvements/processes]. My main achievements include [measurable results like bug reduction, coverage improvement, etc.].",
+            modelAnswer: "I've been working in QA since September 2025 on a large-scale B2B SaaS product with a modular architecture and complex business rules. I joined the project when there was no QA structure, and since then I've been responsible for defining, implementing, and evolving the automated testing strategy, acting as a quality benchmark within the team. I work with automated frontend, API, and hybrid testing, primarily using Playwright, currently covering 9 main system modules such as Leads, Contracts, Sales, Engineering, and Finance. My role involves everything from creating the test base to organizing the structure, defining standards, reusing helpers, and prioritizing critical scenarios. Over this period, I've implemented hundreds of automated tests, progressively increasing coverage in essential product modules. Some modules already have high coverage, while others are constantly evolving, reflecting continuous work to expand and mature QA in a living and growing system. Beyond automation, I work extensively in validating business rules, regression testing, smoke tests, and data consistency testing, especially in dashboards, financial indicators, advanced filters, and dynamic screen configurations. I also create specific tests to reproduce real bugs, ensuring definitive correction and preventing regressions. This experience has given me a solid understanding of end-to-end quality in SaaS products, focusing not only on test execution but also on the impact of functionalities on the end user and the business. Today I feel comfortable working as a QA.",
             keyPoints: [
                 "Mention your experience and career progression",
                 "Highlight current and previous responsibilities",
@@ -1816,7 +1816,7 @@ const interviewQuestionsEN = {
         {
             question: "Why did you choose to work in Quality Assurance?",
             tip: "Be authentic and show passion for the field",
-            modelAnswer: "I chose QA because I have a natural attention to detail and passion for ensuring users have the best possible experience. I'm motivated knowing my work prevents problems before they reach users. Additionally, QA allows me to have a holistic view of the product, understand both the technical and business sides, and contribute directly to the final quality of what we deliver.",
+            modelAnswer: "I chose to work in Quality Assurance because I started my career studying software development, which gave me a solid technical foundation, but over time I realized that my profile connects even more with quality. I have a natural attention to detail, a critical sense, and I like to understand the behavior of the system as a whole. In QA, I can combine my development background with business analysis, failure prevention, and continuous improvement of the user experience. What motivates me most is knowing that my work directly impacts the stability, reliability, and final quality of the product, preventing problems before they reach production. QA allows me to have a holistic view of the application and act strategically within the team.",
             keyPoints: [
                 "Demonstrate genuine passion for the field",
                 "Mention personal characteristics that fit QA",
@@ -1855,7 +1855,7 @@ const interviewQuestionsEN = {
         {
             question: "Describe a conflict situation with a developer and how you resolved it.",
             tip: "Focus on collaborative resolution, not who was right",
-            modelAnswer: "I had a situation where a developer disagreed that a behavior was a bug, claiming it was a 'feature'. Instead of escalating the conflict, I suggested we analyze the specification and expected user behavior together. We discovered the specification was ambiguous. We involved the PO to clarify, and together we defined the correct behavior. This improved our communication and we created a habit of reviewing specifications together before development.",
+            modelAnswer: "I haven't had any direct conflicts with developers because I've always sought to report bugs in a clear, objective, and collaborative way. One example was when I identified that a preset wasn't updating correctly. I reported the problem with evidence, steps to reproduce it, and the impact on expected behavior. The developer analyzed it, agreed with the scenario, and made the correction. Throughout the process, we maintained open and aligned communication, which facilitated a quick resolution of the problem. This type of approach helps maintain a healthy environment focused on product quality, not on who is right or wrong.",
             keyPoints: [
                 "Show maturity and professionalism",
                 "Demonstrate seeking collaborative solutions",
@@ -1868,7 +1868,7 @@ const interviewQuestionsEN = {
         {
             question: "What was the biggest challenge you faced in your QA career?",
             tip: "Choose a relevant challenge and show how you overcame it",
-            modelAnswer: "My biggest challenge was implementing test automation at a company that had never had it. I faced cultural resistance, lack of infrastructure, and legacy code that was difficult to test. I started small, automating the most critical smoke tests to show quick value. I gave presentations showing automation ROI. In 6 months, we had 60% automated coverage and the dev team started writing their own tests.",
+            modelAnswer: "My biggest challenge was structuring test automation in a project that lacked a defined QA process. When I joined, there were no automated tests or a clear quality strategy. I started by understanding the system, prioritizing the most business-critical flows, and implementing automations incrementally, beginning with smoke tests and the main API and frontend scenarios. Over time, I expanded the coverage, created standards, organized the test suite, and integrated automation into the team's daily routine. This brought more stability to deliveries and helped reduce recurring failures, as well as increasing confidence in new releases.",
             keyPoints: [
                 "Choose a significant and relevant challenge",
                 "Explain the specific obstacles",
@@ -1881,7 +1881,7 @@ const interviewQuestionsEN = {
         {
             question: "Tell me about a time when you identified a flaw in software testing that others had overlooked. How did you proceed to detect this flaw and what was the result of your intervention?",
             tip: "Highlight your critical eye and investigation methodology",
-            modelAnswer: "In an e-commerce project, I noticed that checkout tests always used the same user and default cart. I asked: 'What if the user has an expired coupon? What if the product goes out of stock during checkout?' I created scenarios with varied data and discovered a critical bug: when a product went out of stock during payment, the transaction was charged but the order wasn't created. The bug had existed for months because tests didn't cover this specific timing. My intervention avoided approximately $6k in monthly refunds and we implemented a stock reservation mechanism.",
+            modelAnswer: "During manual testing of a web application, I identified that a specific session should hide a card from the interface according to the business rule, but this wasn't happening. This behavior hadn't been noticed previously because the scenarios covered only focused on the default screen display. The flaw was detected by validating different application states and combinations of permissions and data. After confirming the problem, I documented the bug with clear evidence, including steps for reproduction and user impact. I shared the analysis with the development team, who corrected the behavior, including in production. Then, I automated the scenario to ensure the rule was continuously validated and to prevent future regressions.",
             keyPoints: [
                 "Explain how you noticed the gap in tests",
                 "Show critical and questioning thinking",
@@ -1910,7 +1910,7 @@ const interviewQuestionsEN = {
         {
             question: "How do you decide what to automate and what to test manually?",
             tip: "Mention objective decision criteria",
-            modelAnswer: "I evaluate several criteria: execution frequency (frequently run tests are automation candidates), functionality stability (stable features are better for automation), setup complexity (scenarios with lots of manual setup benefit from automation), regression value (critical functionalities need automated regression). I keep manual: exploratory tests, usability, frequently changing scenarios, and cases requiring human judgment.",
+            modelAnswer: "I decide what to automate considering the context of the product and its modules. Functionalities that are frequently executed, appear in multiple modules, or are part of critical business flows (such as Finance, Contracts, Sales, and Engineering) are prioritized for automation, especially for regression testing. I also automate stable scenarios, well-defined business rules, and validations that need to be performed with each release, ensuring consistency and speed in validation. For one-off tests, quick validations, scenarios that don't repeat, or constantly changing functionalities, I prefer to keep as manual or exploratory tests, where human input adds more value. In this way, I use automation strategically, focusing on reducing rework and increasing system reliability.",
             keyPoints: [
                 "Automation: repetitive tests, regression, smoke tests",
                 "Manual: exploratory, usability, unstable scenarios",
@@ -1923,7 +1923,7 @@ const interviewQuestionsEN = {
         {
             question: "What do you know about API testing? How would you test a REST API?",
             tip: "Mention tools, test types, and specific validations",
-            modelAnswer: "To test REST APIs, I verify: correct status codes (200, 201, 400, 401, 404, 500), response structure (schema validation), returned data, headers, response time, and behavior with invalid data. I use tools like Postman for manual and exploratory tests, and frameworks like RestAssured, Supertest, or Python's requests for automation. I also test authentication scenarios, rate limiting, pagination, and contract validation.",
+            modelAnswer: "I have practical experience with REST API testing, both manual and automated. In a REST API, I primarily validate status codes (200, 201, 400, 401, 403, 404, 500), response structure and consistency, business rules, headers, authentication and authorization, as well as negative scenarios with invalid or incomplete data. On a daily basis, I perform automated API tests with Playwright, validating payloads, contracts, and integration between the API and the frontend, including hybrid tests (API + UI) to ensure that the data displayed in the interface is correct. I also evaluate response time, pagination, filters, and the impact of API calls on different system modules. For manual and exploratory testing, I use Postman. I always strive to ensure that the API is stable, predictable, and aligned with business rules, as it is the foundation of a reliable SaaS product.",
             keyPoints: [
                 "Validations: status codes, response body, headers, schema",
                 "Scenarios: happy path, edge cases, errors, authentication",
@@ -1949,7 +1949,7 @@ const interviewQuestionsEN = {
         {
             question: "How would you ensure quality in a CI/CD pipeline?",
             tip: "Describe the stages and test types at each phase",
-            modelAnswer: "I would structure it in layers: on commit, unit tests and linters run (feedback in minutes). Next, integration and API tests (validate contracts between services). Before deploying to staging, automated E2E tests for critical flows. In staging, performance and security tests. I would implement quality gates: the pipeline fails if coverage drops, if tests fail, or if critical vulnerabilities are detected. I would also include smoke tests post-deploy in production.",
+            modelAnswer: "To ensure quality in a CI/CD pipeline, I work with layers of testing, prioritizing rapid feedback and reliability. At the beginning of the pipeline, after commits or pull requests, I run automated API tests and quick frontend tests, ensuring that business rules and key integrations have not been broken. In validation or staging environments, automated regression and E2E tests are run, focusing on the critical flows of the system modules. After deployment, I apply automated smoke tests, validating whether the application is functional and stable. I use GitHub Actions to integrate the tests into the pipeline and monitor failures as quality indicators. The idea is that the pipeline acts as a quality gate, preventing problems from reaching production and increasing confidence in deliverables.",
             keyPoints: [
                 "Unit tests: fast, on commit",
                 "Integration tests: after unit tests",
@@ -1962,7 +1962,7 @@ const interviewQuestionsEN = {
         {
             question: "What's your experience with performance testing? What metrics do you consider important?",
             tip: "Mention tools, test types, and specific metrics",
-            modelAnswer: "I have experience with JMeter and k6 for load testing. The main metrics I monitor are: response time (p50, p90, p99 - not just average), throughput (requests per second), error rate under load, and resource usage (CPU, memory). Test types: load test (expected load), stress test (beyond limit), spike test (sudden peaks), soak test (prolonged load). I always define baselines and SLOs before testing to have objective success criteria.",
+            modelAnswer: "Currently, I don't work with load or stress testing. In my day-to-day work, I use Playwright to validate functional performance, such as API response times and page load times, ensuring that critical flows respond within acceptable limits. For large-scale performance testing, I recognize that specific tools like JMeter or k6 are more suitable.",
             keyPoints: [
                 "Tools: JMeter, k6, Gatling, Locust",
                 "Metrics: latency (percentiles), throughput, error rate",
@@ -1975,7 +1975,7 @@ const interviewQuestionsEN = {
         {
             question: "How would you apply an automated testing approach to improve QA process efficiency in a project with frequent regression testing?",
             tip: "Focus on strategy, prioritization, and automation ROI",
-            modelAnswer: "I would start by mapping current regression tests and prioritizing automation by: execution frequency, flow criticality, time spent manually, and functionality stability. I would implement the test pyramid: solid base of unit tests (fast, cheap), integration/API layer (validate contracts), and top with E2E only for critical flows. I would integrate with CI/CD for automatic execution on each PR. I would use parallelization to reduce execution time. I would implement clear reports with coverage metrics and trends. Expected result: 70% reduction in regression time, feedback in minutes instead of hours, and freeing the team for higher-value exploratory testing.",
+            modelAnswer: "In a project with frequent regressions, I start by understanding which flows truly impact the business and are executed repeatedly. I prioritize automation based on three main criteria: flow criticality, execution frequency, and functionality stability. In my daily work, this means automating cross-functional and critical flows first—such as authentication, permissions, global filters, financial rules, and integrations between modules—that are repeated in different areas of the system and are highly sensitive to regressions. I use Playwright to build an automated test suite that combines API tests, hybrid tests (API + UI), and E2E tests, focusing on validating business rules and system behavior, not just the interface. I keep quick and ad-hoc tests, or highly volatile scenarios, as manual tests. I integrate this suite into the CI/CD pipeline, ensuring automatic execution on pull requests and before new deliveries, with rapid feedback to the team. As coverage grows, I reduce the time spent on manual regressions and free up space for exploratory testing and more strategic validations. The main benefit of this approach is predictability, reduced production failures, and increased confidence in deliveries, especially in a large and modular system where changes at one point can impact multiple areas.",
             keyPoints: [
                 "Map and prioritize what to automate first",
                 "Follow the test pyramid (unit > integration > E2E)",
@@ -2059,7 +2059,7 @@ const interviewQuestionsEN = {
         {
             question: "What quality metrics do you track and report? How do you use these metrics to improve the process?",
             tip: "Show relevant metrics and how they drive decisions",
-            modelAnswer: "I track metrics across different dimensions: 1) Test effectiveness - bugs found per phase (the earlier the better), escape rate (bugs in production), requirements coverage. 2) Efficiency - suite execution time, automation rate, average time to test a feature. 3) Test code quality - flakiness rate, maintainability, time to fix broken tests. 4) Process - bug lead time (time to fix), defect density per module, bug trend over time. I use these metrics to: identify problematic areas (modules with more bugs), justify automation investment (ROI), improve estimates, and show QA value to stakeholders. I present monthly dashboards with trends.",
+            modelAnswer: "I track quality metrics focused on our 9 SaaS system modules, such as finance, engineering, and contracts. The main metrics I monitor are: Bugs found per module and test phase, to identify the most critical areas and prevent problems in production. Test coverage, ensuring that essential functionalities are validated manually or automatically. Test execution time and automation rate, to understand efficiency and prioritize automation where it makes the most difference. Defect trends over time, to track quality evolution and adjust priorities. I use these metrics to identify modules with higher risk, plan improvements in the testing process, and present clear results to the team and stakeholders, showing the impact of QA on system stability.",
             keyPoints: [
                 "Bugs per phase: the earlier found, the better",
                 "Escape rate: bugs reaching production",
@@ -2075,7 +2075,7 @@ const interviewQuestionsEN = {
         {
             question: "The team wants to launch a feature tomorrow, but you found a bug. What do you do?",
             tip: "Show ability to assess risk and communicate decisions",
-            modelAnswer: "First, I assess the bug's severity and impact: does it affect critical functionality? How many users would be impacted? Is there a workaround? I document the bug with clear evidence and immediately communicate to the PO and tech lead with my risk analysis. I present options: delay the launch, launch with the known bug (if low impact) with a planned fix, or do a hotfix before launch if possible within the timeline. The final decision is the business's, but my role is to ensure they decide with complete information.",
+            modelAnswer: "When I encounter a feature without documentation or specification, I first seek to understand the context: I talk to the Product Owner, the developer who implemented it, or other stakeholders to understand the purpose and intent of the feature. Then, I conduct exploratory testing, considering how the end user would interact with it, what the most likely edge cases are, and how similar features work. During the process, I document everything I discover, creating a specification base that the team can validate, and I report the lack of documentation as an area for process improvement. This approach allows me to test safely, discover potential problems before they reach production, and contribute to providing the team with clearer information for future decisions.",
             keyPoints: [
                 "Assess bug severity and impact",
                 "Document with clear evidence",
@@ -2088,7 +2088,7 @@ const interviewQuestionsEN = {
         {
             question: "How would you test a functionality without documentation or specification?",
             tip: "Show proactivity and discovery techniques",
-            modelAnswer: "First, I seek information: talk to the PO, dev who implemented it, or stakeholders to understand the intent. I analyze the code or PRs if possible. Then, I use exploratory tests based on heuristics: what would a user expect? What are the obvious edge cases? How do similar systems work? I document what I discover and validate with the team. While testing, I create the missing documentation - turning testing into specification. I also report the lack of documentation as a process risk.",
+            modelAnswer: "When I encounter a feature without documentation or specification, I first seek to understand the context: I talk to the Product Owner, the developer who implemented it, or other stakeholders to understand the purpose and intent of the feature. Then, I conduct exploratory testing, considering how the end user would interact with it, what the most likely edge cases are, and how similar features work. During the process, I document everything I discover, creating a specification base that the team can validate, and I report the lack of documentation as an area for process improvement. This approach allows me to test safely, discover potential problems before they reach production, and contribute to providing the team with clearer information for future decisions.",
             keyPoints: [
                 "Seek information from PO, devs, stakeholders",
                 "Use exploratory tests and heuristics",
@@ -2101,7 +2101,7 @@ const interviewQuestionsEN = {
         {
             question: "You notice the project's test coverage is very low. How would you address this?",
             tip: "Show gradual and pragmatic strategy",
-            modelAnswer: "I wouldn't try to solve everything at once. First, I would analyze where the biggest risks are - critical functionalities without coverage. I would prioritize automation for highest risk areas and most frequent bug areas. I would implement a 'don't make it worse' policy: all new code must have tests. I would set realistic incremental goals (increase 5% per sprint). I would show value to the team with metrics: bugs found by tests, time saved in regression. Gradually, the testing culture improves.",
+            modelAnswer: "When I realized that the project's test coverage was low, I started by recommending increasing coverage in each module, prioritizing the most critical ones. To organize the work, I requested dedicated time to implement the tests and created a document with planning and priorities, detailing which modules and functionalities to test first. Currently, I am executing the tests gradually, validating and automating where it makes the most difference, and monitoring the evolution of coverage. This approach allows for structured improvement in system quality without compromising project progress, and it is already showing value to the team with concrete results.",
             keyPoints: [
                 "Analyze and prioritize by risk",
                 "Start with critical areas",
@@ -2114,7 +2114,7 @@ const interviewQuestionsEN = {
         {
             question: "The developer says they can't reproduce the bug you reported. How do you proceed?",
             tip: "Show collaboration and investigation capability",
-            modelAnswer: "First, I review my report: is it clear? Does it have all steps, environment, data used? I verify if I can still reproduce it. If yes, I do screen recording or pair with the dev to show it live. I compare environments: browser versions, test data, configurations. Sometimes the bug is specific to an environment or data condition. If I can't reproduce anymore, I document it as intermittent and add logs/monitoring to capture when it occurs again. I never dismiss a bug just because it's hard to reproduce.",
+            modelAnswer: "First, I review my report: is it clear? Does it include all the steps, environment, and data used? I check if I can still reproduce it. If so, I do a screen recording or pair with the developer to show it live. I compare environments: browser versions, test data, configurations. Sometimes the bug is specific to an environment or data condition. If I can no longer reproduce it, I document it as intermittent and add logs/monitoring to capture when it occurs again. I never dismiss a bug just because it's difficult to reproduce.",
             keyPoints: [
                 "Review and improve bug documentation",
                 "Verify if it still reproduces in your environment",
@@ -2127,7 +2127,7 @@ const interviewQuestionsEN = {
         {
             question: "You're the only QA in a team with 5 developers. How do you manage the demand?",
             tip: "Show multiplication and prioritization strategy",
-            modelAnswer: "I don't try to test everything alone - that doesn't scale. My strategy: I enable devs to write tests and do self-review, I define quality checklists for PRs, I implement automation for regression (freeing my time), I prioritize my involvement in higher risk and complexity areas, I do exploratory tests where I add more value. I also negotiate with the team: if too much work comes in, we discuss priorities or accept documented risks. My role becomes more of a 'quality coach' than 'tester of everything'.",
+            modelAnswer: "As the only QA on the team, I organize my work by priority, focusing first on critical functionalities, most used modules, and areas with a history of bugs. I plan my time between exploratory testing, regression automation, and validation of new features. I always communicate with the team and the Product Owner about demand limits, discussing risks and prioritizing what needs to be tested to ensure quality without delaying deliveries.",
             keyPoints: [
                 "Enable devs for quality (shift left)",
                 "Automation to free regression time",
@@ -2140,7 +2140,7 @@ const interviewQuestionsEN = {
         {
             question: "A customer reported a bug in production that passed your tests. How do you react?",
             tip: "Show responsibility and focus on improvement",
-            modelAnswer: "First, I take responsibility without being defensive - bugs escape, it happens. I prioritize helping resolve: I reproduce the bug, document, and support the fix. Then, I do root cause analysis: why didn't we catch it? Missing test scenario? Different data? Environment condition? Based on this, I improve: add the missing scenario to the test suite, update strategy if needed. I share the learning with the team as a retrospective, not as blame. Every escaped bug is an opportunity to improve the process.",
+            modelAnswer: "When a bug slips into production, I take responsibility without becoming defensive, understanding that this happens. First, I reproduce, document, and support the fix quickly. Then, I perform a root cause analysis: was there a missing scenario in the test, different data, or a specific environmental condition? Based on this, I update the tests and the strategy to prevent it from happening again, and I share the learning with the team constructively, transforming the error into a process improvement.",
             keyPoints: [
                 "Take responsibility, don't be defensive",
                 "Prioritize problem resolution",
@@ -2166,7 +2166,7 @@ const interviewQuestionsEN = {
         {
             question: "Imagine a software version has an intermittent bug that only occurs under specific conditions. How would you structure a test plan to identify and reproduce this bug?",
             tip: "Show systematic investigation methodology",
-            modelAnswer: "I would structure a systematic approach: 1) Collect data - gather all reports, logs, occurrence times, environment, input data, usage patterns. 2) Pattern analysis - look for correlations (time, load, specific data, action sequence). 3) Hypotheses - list possible causes: race condition, memory leak, cache, corrupted data, timeout. 4) Controlled reproduction - create isolated environment and test each hypothesis systematically. 5) Instrumentation - add detailed logs, resource monitoring, tracing. 6) Stress tests - run scenarios in loops to increase reproduction probability. 7) Document everything - even failed attempts help understand the problem.",
+            modelAnswer: "For an intermittent bug, I would structure a systematic investigation plan: Collect data: gather reports, logs, environment, input data, and the sequence of actions in which the bug occurred. Analyze patterns: look for correlations, times, loads, or data types that may trigger the problem. Generate hypotheses: possible causes such as corrupted data, timeout, cache, or concurrency conditions. Controlled reproduction: create isolated scenarios and test each hypothesis in an organized way. Instrumentation: add detailed logs and monitoring to capture more information. Repeated testing: run scenarios multiple times to increase the chance of reproducing the bug. Documentation: record all attempts, successes, or failures for team analysis and future learning.",
             keyPoints: [
                 "Systematic data and evidence collection",
                 "Pattern and correlation analysis",
@@ -2194,7 +2194,7 @@ const interviewQuestionsEN = {
         {
             question: "How do you manage test environments to ensure they're reliable and adequately represent production?",
             tip: "Address configuration, data, stability, and governance",
-            modelAnswer: "Environment management is critical for reliable tests. My approach: 1) Production parity - use Infrastructure as Code (Terraform, Docker) to ensure identical configurations, same service versions and dependencies. 2) Test data - data masking strategy for sanitized production data, test data generators for specific scenarios, periodic refresh. 3) Isolation - dedicated environments by purpose (dev, QA, staging, performance), avoid interference between teams. 4) Stability - environment health monitoring, fast reset/restore process, external dependency documentation and mocks when needed. 5) Governance - access control, change logs, clear ownership. Unstable environments generate flakiness and loss of test confidence.",
+            modelAnswer: "To ensure that test environments are reliable and represent production, I focus on a few practical points: Consistent configuration: I strive to make the environment as close as possible to the production environment in terms of essential functionalities and data. Test data: I use realistic or sanitized data to validate scenarios, ensuring that tests reflect real-world situations. Stability and isolation: I avoid simultaneous changes that could interfere with tests and document the state of the environment when necessary. With this, I can perform reliable tests, reproducing production scenarios without relying on unstable environments.",
             keyPoints: [
                 "Production parity using IaC (Docker, Terraform)",
                 "Data strategy: masking, generators, refresh",
@@ -2224,7 +2224,7 @@ const interviewQuestionsEN = {
         {
             question: "How do you stay updated in the QA field?",
             tip: "Mention specific sources and learning practices",
-            modelAnswer: "I follow several sources: blogs like Ministry of Testing, Test Automation University for free courses, podcasts like Test Guild. On LinkedIn I follow professionals like Angie Jones, Alan Richardson. I participate in local QA communities and meetups. I practice on personal projects - I have a repo where I experiment with new tools. I also read classic books like 'Lessons Learned in Software Testing'. I try to dedicate at least 2 hours per week to structured learning, besides daily learning at work.",
+            modelAnswer: "To stay up-to-date in QA, I follow communities and professionals in the field, such as blogs, LinkedIn, and QA groups. I also practice on personal projects, testing new tools and techniques I learn. I always seek to learn in my daily work, observing how to improve tests and processes, and I try to dedicate some time each week to structured study, courses, or reading.",
             keyPoints: [
                 "Specific sources: blogs, courses, podcasts",
                 "Communities and networking",
@@ -2250,7 +2250,7 @@ const interviewQuestionsEN = {
         {
             question: "How do you handle negative feedback about your work?",
             tip: "Show maturity and growth mindset",
-            modelAnswer: "I see feedback as a growth opportunity, even when it's hard to hear. First, I listen without being defensive and try to understand the perspective. I ask for specific examples if not clear. I reflect on what's valid and what I can improve. I thank them for the feedback. If I disagree with something, I express my perspective constructively, but also consider I might be wrong. I once received feedback about communication that led me to greatly improve my bug reports, for example.",
+            modelAnswer: "I see feedback as an opportunity for growth, even when it's difficult to hear. First, I listen without becoming defensive and try to understand the point of view. I ask for specific examples if something isn't clear. I reflect on what is valid and what I can improve. I thank them for the feedback. If I disagree with something, I express my perspective constructively, but I also consider that I might be wrong. I've received feedback on communication that has led me to greatly improve my bug reports, for example.",
             keyPoints: [
                 "Listen without defensiveness",
                 "Ask for specific examples",
